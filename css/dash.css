@@ -1,0 +1,58 @@
+.colored {
+    background-color: dimgrey;
+}
+
+/* header */
+
+.logo {
+    width: 40px !important;
+    height: 40px !important;
+}
+
+/* end header */
+
+/* s1 */
+
+@media screen and (min-width: 1000px) {
+    .section-s1 {
+        margin-top: 95px !important;
+        /* margin-bottom: 95px !important; */
+    }
+}
+
+/* end s1 */
+
+/* s2 */
+
+@media screen and (min-width: 1000px) {
+    .section-s2 {
+        margin-top: 110px !important;
+        margin-bottom: 110px !important;
+    }
+}
+
+.candidate-avatar {
+    width: 100px;
+    height: 100px;
+}
+
+.data-fixed-size-lead {
+    background-color: darkgreen
+}
+
+@media screen and (min-width: 800px) {
+    .data-fixed-size-lead {
+        max-width: 18% !important;
+    }
+}
+
+/* end s1 */
+
+/* footer */
+
+.footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: whitesmoke;
+}
+
+/* end footer */
