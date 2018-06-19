@@ -1,3 +1,7 @@
-.navbar{
+body {
+    background: linear-gradient(lightgreen, lightpink);
+}
+
+.navbar {
     color: whitesmoke !important;
 }
