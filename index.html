@@ -22,47 +22,28 @@
 
 <body>
     <div class="container-fluid clearfix">
-        <div class="header row  center colored">
-            <div class="mt-3 col-lg-6 col-md-6 col-sm-6 col-6 left-align">
-                <img src="./img/background/logo.gif" class="logo rounded-circle" alt="logo">
-            </div>
-            <ul class="list-reset  mt-2 mb-2 col-lg-6 col-md-6 col-sm-6 col-6 right-align">
-                <!-- <li class="inline-block p-1">
-                    <a href="#">
-                        <button class="btn btn-outline-warning">Register New Candidate</button>
-                    </a>
-                </li>
-                <li class="inline-block p-1">
-                    <a href="#">
-                        <button class="btn btn-primary">Sign Up</button>
-                    </a>
-                </li> -->
-                <li class="inline-block p-1">
-                    <a href="./login.html">
-                        <button class="btn btn-primary">Log Out</button>
-                    </a>
-                </li>
-            </ul>
-            <!-- <div class="dropdown mt-2 mb-2 col-md-8 col-10 right-align xl-hide lg-hide md-hide">
-                <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-                    aria-expanded="false">Menu</button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#">Sign Up</a>
-                    <a class="dropdown-item" href="#">Sign In</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Register New Candidate</a>
+        <nav class="navbar mb-3 border-bottom">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="./index.html" style="color: gray"> OlotuSquare E-Voting</a>
                 </div>
-            </div> -->
-        </div>
-        <section class="section-s1">
-            <div class="s1-bg-img">
-                <img src="./img/background/ngnparty.jpg" alt="Nigerian Party" srcset="">
+                <ul class="nav navbar-nav navbar-nav">
+                        <li class="col-right right-align">
+                            <a href="./login.html">
+                                <span class="fa fa-log-in"></span> Login</a>
+                        </li>
+                    </ul>
             </div>
-        </section>
+        </nav>
+
+        <!-- <section class="section-s1">
+
+        </section> -->
+
         <section class="section-s2">
             <div class="center inline-flex">
                 <div class="group1 center mb-2">
-                    <legend class="text-uppercase border-top">Presidency</legend>
+                    <legend class="text-uppercase">Presidency</legend>
                     <div class="data-fixed-size-lead inline-block  p-1 col-lg-1 col-0">APC
                         <ul class="list-group">
                             <li class="list-group-item justify-content-center align-items-center">
@@ -74,7 +55,7 @@
                             <li class="list-group-item justify-content-center align-items-center">
                                 <!-- <button class="btn custom-radio"></button> -->
                                 <div class="btn-group-toggle" data-toggle="buttons">
-                                    <label class="btn btn-secondary active">
+                                    <label class="vote-btn btn expand">
                                         <input type="radio" name="first5" id="option1" autocomplete="off" checked> Vote
                                     </label>
                                 </div>
@@ -87,14 +68,14 @@
                             <li class="list-group-item justify-content-center align-items-center">
                                 <img src="./img/avatar/avatar-male.jpg" class="candidate-avatar" alt="avatar">
                             </li>
-                            <li class="list-group-item justify-content-center align-items-center">Name&nbsp;
-                                <span class="badge badge-primary badge-pill">vote</span>
+                            <li class="list-group-item justify-content-center align-items-center">James Brown&nbsp;
+                                <span class="badge badge-primary badge-pill text-xl-center">vote</span>
                             </li>
                             <li class="list-group-item justify-content-center align-items-center">
                                 <!-- <button class="btn custom-radio"></button> -->
                                 <div class="btn-group-toggle" data-toggle="buttons">
-                                    <label class="btn btn-secondary active">
-                                        <input type="radio" name="first5" id="option2" autocomplete="off" checked> Vote
+                                    <label class="vote-btn btn expand">
+                                        <input type="radio" name="first5" id="option1" autocomplete="off" checked> Vote
                                     </label>
                                 </div>
                             </li>
@@ -111,8 +92,8 @@
                             <li class="list-group-item justify-content-center align-items-center">
                                 <!-- <button class="btn custom-radio"></button> -->
                                 <div class="btn-group-toggle" data-toggle="buttons">
-                                    <label class="btn btn-secondary active">
-                                        <input type="radio" name="first5" id="option3" autocomplete="off" checked> Vote
+                                    <label class="vote-btn btn expand">
+                                        <input type="radio" name="first5" id="option1" autocomplete="off" checked> Vote
                                     </label>
                                 </div>
                             </li>
@@ -129,8 +110,8 @@
                             <li class="list-group-item justify-content-center align-items-center">
                                 <!-- <button class="btn custom-radio"></button> -->
                                 <div class="btn-group-toggle" data-toggle="buttons">
-                                    <label class="btn btn-secondary active">
-                                        <input type="radio" name="first5" id="option4" autocomplete="off" checked> Vote
+                                    <label class="vote-btn btn expand">
+                                        <input type="radio" name="first5" id="option1" autocomplete="off" checked> Vote
                                     </label>
                                 </div>
                             </li>
@@ -147,8 +128,8 @@
                             <li class="list-group-item justify-content-center align-items-center">
                                 <!-- <button class="btn custom-radio"></button> -->
                                 <div class="btn-group-toggle" data-toggle="buttons">
-                                    <label class="btn btn-secondary active">
-                                        <input type="radio" name="first5" id="option5" autocomplete="off" checked> Vote
+                                    <label class="vote-btn btn expand">
+                                        <input type="radio" name="second5" id="option1" autocomplete="off" checked> Vote
                                     </label>
                                 </div>
                             </li>
@@ -168,8 +149,8 @@
                             <li class="list-group-item justify-content-center align-items-center">
                                 <!-- <button class="btn custom-radio"></button> -->
                                 <div class="btn-group-toggle" data-toggle="buttons">
-                                    <label class="btn btn-secondary active">
-                                        <input type="radio" name="second5" id="option6" autocomplete="off" checked> Vote
+                                    <label class="vote-btn btn expand">
+                                        <input type="radio" name="second5" id="option1" autocomplete="off" checked> Vote
                                     </label>
                                 </div>
                             </li>
@@ -187,8 +168,8 @@
                             <li class="list-group-item justify-content-center align-items-center">
                                 <!-- <button class="btn custom-radio"></button> -->
                                 <div class="btn-group-toggle" data-toggle="buttons">
-                                    <label class="btn btn-secondary active">
-                                        <input type="radio" name="second5" id="option7" autocomplete="off" checked> Vote
+                                    <label class="vote-btn btn expand">
+                                        <input type="radio" name="second5" id="option1" autocomplete="off" checked> Vote
                                     </label>
                                 </div>
                             </li>
@@ -205,8 +186,8 @@
                             <li class="list-group-item justify-content-center align-items-center">
                                 <!-- <button class="btn custom-radio"></button> -->
                                 <div class="btn-group-toggle" data-toggle="buttons">
-                                    <label class="btn btn-secondary active">
-                                        <input type="radio" name="second5" id="option8" autocomplete="off" checked> Vote
+                                    <label class="vote-btn btn expand">
+                                        <input type="radio" name="second5" id="option1" autocomplete="off" checked> Vote
                                     </label>
                                 </div>
                             </li>
@@ -223,8 +204,8 @@
                             <li class="list-group-item justify-content-center align-items-center">
                                 <!-- <button class="btn custom-radio"></button> -->
                                 <div class="btn-group-toggle" data-toggle="buttons">
-                                    <label class="btn btn-secondary active">
-                                        <input type="radio" name="second5" id="option9" autocomplete="off" checked> Vote
+                                    <label class="vote-btn btn expand">
+                                        <input type="radio" name="second5" id="option1" autocomplete="off" checked> Vote
                                     </label>
                                 </div>
                             </li>
@@ -241,8 +222,8 @@
                             <li class="list-group-item justify-content-center align-items-center">
                                 <!-- <button class="btn custom-radio"></button> -->
                                 <div class="btn-group-toggle" data-toggle="buttons">
-                                    <label class="btn btn-secondary active">
-                                        <input type="radio" name="second5" id="option10" autocomplete="off" checked> Vote
+                                    <label class="vote-btn btn expand">
+                                        <input type="radio" name="second5" id="option1" autocomplete="off" checked> Vote
                                     </label>
                                 </div>
                             </li>
@@ -251,9 +232,9 @@
                 </div>
             </div>
         </section>
-        <div class="footer row p-2 mt-3">
+        <div class="footer row p-2 mt-3 rounded-0">
             <div class="max-width-1 mx-auto">
-                CopyRight &copy; CIID. All Rights Reserved.
+                &copy; FSQ 2018. All Rights Reserved.
             </div>
 
         </div>

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Admin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- icons -->
+    <link rel="stylesheet" href="./resources/icon_font-file/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- css/basscss/bootstrap -->
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./resources/basscss.min.css">
+    <link rel="stylesheet" href="./resources/bootstrap-4.1.0-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./resources/jquery-ui-1.12.1/jquery-ui.css">
+    <link rel="stylesheet" href="./resources/jquery-ui-1.12.1/jquery-ui.structure.css">
+    <link rel="stylesheet" href="./resources/jquery-ui-1.12.1/jquery-ui.theme.css">
+    <!-- js/jquery/ajax -->
+    <script type="text/javascript" src="./resources/popper.js" charset="utf-8"></script>
+    <script type="text/javascript" src="./resources/tooltip.js" charset="utf-8"></script>
+    <script type="text/javascript" src="./resources/jquery-3.3.1.js" charset="utf-8"></script>
+    <script type="text/javascript" src="./resources/jquery-ui-1.12.1/jquery-ui.js" charset="utf-8"></script>
+    <script type="text/javascript" src="./resources/bootstrap-4.1.0-dist/js/bootstrap.js"></script>
+    <script type="text/javascript" src="./resources/bootstrap-4.1.0-dist/js/bootstrap.bundle.js"></script>
+</head>
+<body>
+    <!--navbar-->
+    <nav class="navbar border-bottom">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="./index.html" style="color: gray"> OlotuSquare E-Voting</a>
+            </div>
+            <ul class="nav navbar-nav navbar-nav right">
+                <li class="col-right">
+                    <a href="./login.html">
+                        <span class="fa fa-log-in"></span> Log Out</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--form-->
+        <form class="form-inline m-5 right">
+            <div class="form-group mx-sm-3 mb-2">
+                <select class="custom-select">
+                    <option selected>Select Election</option>
+                    <option value="1">Presidency</option>
+                    <option value="2">Governorship</option>
+                    <option value="3">LGA Rep</option>
+                </select>
+            </div>
+            <div class="form-group mx-sm-3 mb-2">
+                <label class="sr-only" for="inlineFormInputName">Name</label>
+                <input type="text" class="form-control" id="inlineFormInputName" placeholder="start date/time">
+            </div>
+            <div class="form-group mx-sm-3 mb-2">
+                <label class="sr-only" for="inlineFormInputName">Name</label>
+                <input type="text" class="form-control" id="inlineFormInputName" placeholder="end time/date">
+            </div>
+            <button type="submit" class="btn btn-primary mb-2">Add</button>
+        </form>
+    <!--form/-->
+
+    <!--Welcome-Admin-->
+        <div class"col-lg-12" id="admin">
+            <h3 class="display-4 text-primary text-xs-center p-b-1 m-b-1 h1 m-5">ADMIN</h3>
+        </div>
+    <!--Welcome-Admin/-->
+        
+    <!--ELection-Section-->   
+        <div class="container grid">
+            <div class="center inline-flex">
+                <div class="group1 center mb-2">
+                    <legend class="text-uppercase admin-legend">Presidency</legend>
+                    <div class="data-fixed-size-lead inline-block  p-1 col-lg-1 col-0">APC
+                        <ul class="list-group">
+                            <li class="list-group-item justify-content-center align-items-center">
+                                <img src="./img/avatar/Tony-Okpanachi.jpg" class="admin-avatar" alt="avatar">
+                            </li>
+                            <li class="list-group-item justify-content-center align-items-center">Tony Okpanachi&nbsp;
+                                <!-- <span class="badge badge-primary badge-pill m-1">104</span> -->
+                            </li>
+                            <li class="list-group-item justify-content-center align-items-center">
+                                <!-- <button class="btn custom-radio"></button> -->
+                                <div class="btn-group-toggle" data-toggle="buttons">
+                                    <label class="btn btn-primary">
+                                        <input type="radio" name="first5" id="option1" autocomplete="off" checked> Delete
+                                    </label>
+                                    <label class="btn btn-secondary">
+                                        <input type="radio" name="first5" id="option1" autocomplete="off" checked> Disable
+                                    </label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+            
+                    <div class="data-fixed-size-lead inline-block p-1 col-lg-1 col-0">PDP
+                        <ul class="list-group">
+                            <li class="list-group-item justify-content-center align-items-center">
+                                <img src="./img/avatar/avatar-male.jpg" class="admin-avatar" alt="avatar">
+                            </li>
+                            <li class="list-group-item justify-content-center align-items-center">James Brown&nbsp;
+                                <!-- <span class="badge badge-primary badge-pill text-xl-center m-1">vote</span> -->
+                            </li>
+                            <li class="list-group-item justify-content-center align-items-center">
+                                <!-- <button class="btn custom-radio"></button> -->
+                                <div class="btn-group-toggle" data-toggle="buttons">
+                                    <label class="btn btn-primary">
+                                        <input type="radio" name="first5" id="option1" autocomplete="off" checked> Delete
+                                    </label>
+                                    <label class="btn btn-secondary">
+                                        <input type="radio" name="first5" id="option1" autocomplete="off" checked> Disable
+                                    </label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="data-fixed-size-lead inline-block p-1 col-lg-1 col-0">AGPA
+                        <ul class="list-group">
+                            <li class="list-group-item justify-content-center align-items-center">
+                                <img src="./img/avatar/avatar-male.jpg" class="admin-avatar" alt="avatar">
+                            </li>
+                            <li class="list-group-item justify-content-center align-items-center">Enter Names&nbsp;
+                                <!-- <span class="badge badge-primary badge-pill m-1">vote</span> -->
+                            </li>
+                            <li class="list-group-item justify-content-center align-items-center">
+                                <!-- <button class="btn custom-radio"></button> -->
+                                <div class="btn-group-toggle" data-toggle="buttons">
+                                    <label class="btn btn-primary">
+                                        <input type="radio" name="first5" id="option1" autocomplete="off" checked> Delete
+                                    </label>
+                                    <label class="btn btn-secondary">
+                                        <input type="radio" name="first5" id="option1" autocomplete="off" checked> Disable
+                                    </label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="data-fixed-size-lead inline-block p-1 col-lg-1 col-0">CPC
+                        <ul class="list-group">
+                            <li class="list-group-item justify-content-center align-items-center">
+                                <img src="./img/avatar/avatar-male.jpg" class="admin-avatar" alt="avatar">
+                            </li>
+                            <li class="list-group-item justify-content-center align-items-center">Enter Names&nbsp;
+                                <!-- <span class="badge badge-primary badge-pill m-1">vote</span> -->
+                            </li>
+                            <li class="list-group-item justify-content-center align-items-center">
+                                <!-- <button class="btn custom-radio"></button> -->
+                                <div class="btn-group-toggle" data-toggle="buttons">
+                                    <label class="btn btn-primary">
+                                        <input type="radio" name="first5" id="option1" autocomplete="off" checked> Delete
+                                    </label>
+                                    <label class="btn btn-secondary">
+                                        <input type="radio" name="first5" id="option1" autocomplete="off" checked> Disable
+                                    </label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="data-fixed-size-lead inline-block p-1 col-lg-1 col-0">ANPP
+                        <ul class="list-group">
+                            <li class="list-group-item justify-content-center align-items-center">
+                                <img src="./img/avatar/avatar-male.jpg" class="admin-avatar" alt="avatar">
+                            </li>
+                            <li class="list-group-item justify-content-center align-items-center">Enter Names&nbsp;
+                                <!-- <span class="badge badge-primary badge-pill m-1">vote</span> -->
+                            </li>
+                            <li class="list-group-item justify-content-center align-items-center">
+                                <!-- <button class="btn custom-radio"></button> -->
+                                <div class="btn-group-toggle" data-toggle="buttons">
+                                    <label class="btn btn-primary">
+                                        <input type="radio" name="first5" id="option1" autocomplete="off" checked> Delete
+                                    </label>
+                                    <label class="btn btn-secondary">
+                                        <input type="radio" name="first5" id="option1" autocomplete="off" checked> Disable
+                                    </label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="group2 center mt-2">
+                    <legend class="text-uppercase mt-5 admin-legend">Governorship</legend>
+                    <div class="data-fixed-size-lead inline-block  p-1 col-lg-1 col-0">APC
+                        <ul class="list-group">
+                            <li class="list-group-item justify-content-center align-items-center">
+                                <img src="./img/avatar/avatar-male.jpg" class="admin-avatar" alt="avatar">
+                            </li>
+                            <li class="list-group-item justify-content-center align-items-center">Enter Names&nbsp;
+                                <!-- <span class="badge badge-primary badge-pill m-1">vote</span> -->
+                            </li>
+                            <li class="list-group-item justify-content-center align-items-center">
+                                <!-- <button class="btn custom-radio"></button> -->
+                                <div class="btn-group-toggle" data-toggle="buttons">
+                                    <label class="btn btn-primary">
+                                        <input type="radio" name="first5" id="option1" autocomplete="off" checked> Delete
+                                    </label>
+                                    <label class="btn btn-secondary">
+                                        <input type="radio" name="first5" id="option1" autocomplete="off" checked> Disable
+                                    </label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+            
+                    <div class="data-fixed-size-lead inline-block p-1 col-lg-1 col-0">PDP
+                        <ul class="list-group">
+                            <li class="list-group-item justify-content-center align-items-center">
+                                <img src="./img/avatar/avatar-male.jpg" class="admin-avatar" alt="avatar">
+                            </li>
+                            <li class="list-group-item justify-content-center align-items-center">Enter Names&nbsp;
+                                <!-- <span class="badge badge-primary badge-pill m-1">vote</span> -->
+                            </li>
+                            <li class="list-group-item justify-content-center align-items-center">
+                                <!-- <button class="btn custom-radio"></button> -->
+                                <div class="btn-group-toggle" data-toggle="buttons">
+                                    <label class="btn btn-primary">
+                                        <input type="radio" name="first5" id="option1" autocomplete="off" checked> Delete
+                                    </label>
+                                    <label class="btn btn-secondary">
+                                        <input type="radio" name="first5" id="option1" autocomplete="off" checked> Disable
+                                    </label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="data-fixed-size-lead inline-block p-1 col-lg-1 col-0">AGPA
+                        <ul class="list-group">
+                            <li class="list-group-item justify-content-center align-items-center">
+                                <img src="./img/avatar/avatar-male.jpg" class="admin-avatar" alt="avatar">
+                            </li>
+                            <li class="list-group-item justify-content-center align-items-center">Enter Names&nbsp;
+                                <!-- <span class="badge badge-primary badge-pill m-1">vote</span> -->
+                            </li>
+                            <li class="list-group-item justify-content-center align-items-center">
+                                <!-- <button class="btn custom-radio"></button> -->
+                                <div class="btn-group-toggle" data-toggle="buttons">
+                                    <label class="btn btn-primary">
+                                        <input type="radio" name="first5" id="option1" autocomplete="off" checked> Delete
+                                    </label>
+                                    <label class="btn btn-secondary">
+                                        <input type="radio" name="first5" id="option1" autocomplete="off" checked> Disable
+                                    </label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="data-fixed-size-lead inline-block p-1 col-lg-1 col-0">CPC
+                        <ul class="list-group">
+                            <li class="list-group-item justify-content-center align-items-center">
+                                <img src="./img/avatar/avatar-male.jpg" class="admin-avatar" alt="avatar">
+                            </li>
+                            <li class="list-group-item justify-content-center align-items-center">Enter Names&nbsp;
+                                <!-- <span class="badge badge-primary badge-pill m-1">vote</span> -->
+                            </li>
+                            <li class="list-group-item justify-content-center align-items-center">
+                                <!-- <button class="btn custom-radio"></button> -->
+                                <div class="btn-group-toggle" data-toggle="buttons">
+                                    <label class="btn btn-primary">
+                                        <input type="radio" name="first5" id="option1" autocomplete="off" checked> Delete
+                                    </label>
+                                    <label class="btn btn-secondary">
+                                        <input type="radio" name="first5" id="option1" autocomplete="off" checked> Disable
+                                    </label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="data-fixed-size-lead inline-block p-1 col-lg-1 col-0">ANPP
+                        <ul class="list-group">
+                            <li class="list-group-item justify-content-center align-items-center">
+                                <img src="./img/avatar/avatar-male.jpg" class="admin-avatar" alt="avatar">
+                            </li>
+                            <li class="list-group-item justify-content-center align-items-center">Enter Names&nbsp;
+                                <!-- <span class="badge badge-primary badge-pill m-1">vote</span> -->
+                            </li>
+                            <li class="list-group-item justify-content-center align-items-center">
+                                <!-- <button class="btn custom-radio"></button> -->
+                                <div class="btn-group-toggle" data-toggle="buttons">
+                                    <label class="btn btn-primary">
+                                        <input type="radio" name="first5" id="option1" autocomplete="off" checked> Delete
+                                    </label>
+                                    <label class="btn btn-secondary">
+                                        <input type="radio" name="first5" id="option1" autocomplete="off" checked> Disable
+                                    </label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!--ELection-Section/-->
+
+    <!-- Footer -->
+        <div class="footer row p-2 mt-3 rounded-0">
+            <div class="max-width-1 mx-auto">
+                &copy; FSQ 2018. All Rights Reserved.
+            </div>
+        
+        </div>
+    <!-- Footer -->
+   
+</body>
+</html>
