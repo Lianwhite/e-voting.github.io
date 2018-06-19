@@ -5,52 +5,36 @@
     <title>candidates</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- icons -->
+    <link rel="stylesheet" href="./resources/icon_font-file/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- css/basscss/bootstrap -->
     <link rel="stylesheet" href="./css/login-reg.css">
-    <link href="https://unpkg.com/basscss@8.0.2/css/basscss.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./resources/basscss.min.css">
+    <link rel="stylesheet" href="./resources/bootstrap-4.1.0-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./resources/jquery-ui-1.12.1/jquery-ui.css">
+    <link rel="stylesheet" href="./resources/jquery-ui-1.12.1/jquery-ui.structure.css">
+    <link rel="stylesheet" href="./resources/jquery-ui-1.12.1/jquery-ui.theme.css">
+    <!-- js/jquery/ajax -->
+    <script type="text/javascript" src="./resources/popper.js" charset="utf-8"></script>
+    <script type="text/javascript" src="./resources/tooltip.js" charset="utf-8"></script>
+    <script type="text/javascript" src="./resources/jquery-3.3.1.js" charset="utf-8"></script>
+    <script type="text/javascript" src="./resources/jquery-ui-1.12.1/jquery-ui.js" charset="utf-8"></script>
+    <script type="text/javascript" src="./resources/bootstrap-4.1.0-dist/js/bootstrap.js"></script>
+    <script type="text/javascript" src="./resources/bootstrap-4.1.0-dist/js/bootstrap.bundle.js"></script>
+
 </head>
 
 <body style="background-color: white">
-    <!-- <nav class="navbar navbar-inverse">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                <a class="navbar-brand" href="#"> OlotuSquare E-Voting</a>
-                </div>
-                <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">Active Elections</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Help</a></li>
-                <li><a href="#">FAQs</a></li>
-                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">English <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                    <li><a href="#">Hausa</a></li>
-                    <li><a href="#">Yoruba</a></li>
-                    <li><a href="#">Igbo</a></li>
-                    </ul>
-                </li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                <li><a href="#"><span class="glyphicon glyphicon-user"></span>Register User</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-                </ul>
-            </div>
-        </nav> -->
     <nav class="navbar">
         <div class="container-fluid">
             <div class="navbar-header">
                 <a class="navbar-brand"> OlotuSquare E-Voting</a>
             </div>
             <ul class="nav navbar-nav navbar-nav right">
-                <!-- <li>
-                    <a href="./candidates.html">
-                        <span class="glyphicon glyphicon-user"></span>Register Candidate</a>
-                </li> -->
                 <li class="col-right">
                     <a href="./login.html">
-                        <span class="glyphicon glyphicon-log-in"></span> Login</a>
+                        <span class="fa fa-log-in"></span> Login</a>
                 </li>
             </ul>
         </div>
@@ -64,16 +48,15 @@
                 <div class="form-group">
                     <label for="exampleInputEmail1">Email address</label>
                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                    <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                 </div>
-                <div class="input-group">
-                    <span class="input-group-addon">
-                        <i class="glyphicon glyphicon-lock"></i>
+                <div class="input-group mb-3">
+                    <span class="input-group-prepend">
+                        <i class="fa fa-lock input-group-text"></i>
                     </span>
                     <input id="password" type="password" class="form-control" name="password" placeholder="Password">
                 </div>
                 <div>
-                    <div class="input-group">
+                    <div class="form-group">
                         <label for="exampleFormControlFile1">Enter Voter's ID</label>
                         <input id="text" type="text" class="form-control" name="text" placeholder="Enter Voter's ID">
                     </div>

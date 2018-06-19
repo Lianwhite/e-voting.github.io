@@ -5,3 +5,7 @@
 .navbar {
     color: rgb(78, 75, 75) !important;
 }
+
+.input-group-text{
+    inline-size: 40px !important;
+}
